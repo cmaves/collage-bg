@@ -113,6 +113,7 @@ impl<'a> ColGen<'a> {
 			let r: usize = self.rng.gen();
 			let r = r % self.paths.len();
 			if root.0.insert(r) {
+				root.0.remove(&root.1[tbr]);
 				root.1[tbr] = r;
 				break r;
 			}
