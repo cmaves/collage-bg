@@ -16,7 +16,7 @@ fn main() {
 	cg.set_verbose(true);
 	cg.update_roots();
 	let mut count = 0;
-	let sleep_dur = Duration::from_secs(50);
+	let sleep_dur = Duration::from_secs(15);
 	loop {
 		sleep(sleep_dur);
 		if cg.check_update() { continue; }
